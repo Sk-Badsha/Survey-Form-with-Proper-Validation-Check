@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Libre Franklin', sans-serif; */
+/* font-family: 'Sometype Mono', monospace; */
+
+body {
+    background-color: #1382c8;
+    margin: 1rem auto;
+    font-size: 17px;
+    /* font-family: 'Sometype Mono', monospace; */
+}
+header{
+    margin-top: 20px;
+}
+header h1 {
+    color: #ffffffee;
+    text-align: center;
+    /* font-weight:550; */
+    font-family: 'Roboto Condensed', sans-serif;
+    top: 30px;
+}
+
+.form {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #ef6e58;
+}
+
+form {
+    width: 60%;
+    padding: 25px 40px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1% auto;
+}
+
+
+.span-50{
+    display: flex;
+    justify-content: space-between;
+   
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+
+label i {
+    color: #999;
+    font-size: 80%;
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+
+.box {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+
+.form-inline label,
+.form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 90%;
+}
+
+.buttons{
+flex-direction: row;
+justify-content: space-between;
+}
+
+input[type=text] {
+    outline: none;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #05a8c4;
+    border-color: #01aac8;
+   
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 120px;
+}
+
+input[type="submit"]:hover {
+    background: #052b4f;
+    
+}
+.buttons input[type="submit"] {
+    margin-right: 5px; /* Adjust this value as needed */
+}
+
+input[type="reset"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #df0606;
+    border-color: #df0606;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 120px;
+}
+
+input[type="reset"]:hover {
+    background: #980101;
+  
+}
+.input-1 {
+    background-image: url(right.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid #01cc40;
+}
+
+.input-2 {
+    background-image: url(wrong.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid red;
+}
+
+.input-3 {
+    border: 1px solid #01cc40 !important;
+}
+
+select {
+    outline: none !important;
+  /* background: #ff0; */
+}
+.input-4 {
+    border: 1px solid red;
+}
+
+
+  
+  

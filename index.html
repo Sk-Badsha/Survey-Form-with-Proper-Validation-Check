@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Sometype+Mono&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <title>Survey Form by Sk' Badsha</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Customer Survey form</h1>
+        </header>
+        <main>
+            <form name="surveyForm" onsubmit="return validateForm()" method="get">
+                <div class="span-50">
+                    <div class="box">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" class="name">
+                        <div class="error" id="firstNameError"></div>
+                    </div>
+                    <div class="box">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" class="name">
+                        <div class="error" id="lastNameError"></div>
+                    </div>
+                </div>
+                <div class="span-50">
+                    <div class="box">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob">
+                        <div class="error" id="dobError"></div>
+                    </div>
+                    <div class="box">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option disabled selected>Select</option>
+                            <option value="INDIA">INDIA</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="ITALY">ITALY</option>
+                        </select>
+                       
+                        <div class="error" id="countryError"></div>
+                    </div>
+                </div>
+                <div class="span-50">
+                    <div class="box">
+                        <label for="gender">Gender</label>
+                        <div class="form-inline" id="gender">
+                            <label><input type="radio" name="gender" value="Male">Male</label>
+                            <label><input type="radio" name="gender" value="Female">Female</label>
+                        </div>
+                        <div class="error" id="genderError"></div>
+                    </div>
+
+                    <div class="box">
+                        <label for="profession">Profession</label>
+                        <input type="text" name="profession" id="profession">
+                        <div class="error" id="professionError"></div>
+                    </div>
+                </div>
+                <div class="span-50">
+                    <div class="box">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <div class="error" id="emailError"></div>
+                    </div>
+
+                    <div class="box">
+                        <label for="mobile">Mobile Number </label>
+                        <input type="text" name="mobile" id="mobile" maxlength="10">
+                        <div class="error" id="mobileError"></div>
+                    </div>
+                </div>
+                <div class="box buttons">
+                    <input type="submit" value="Submit" class="submit-button">
+                    <input type="reset" value="Reset" class="reset-button" id="resetBtn">
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Form Submission Details</h2>
+            <div id="popup-details"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Customer Survey Form. All right Reserved | Design by <span class="developer"><i>Sk Badsha</i></span></p>
+    </footer>
+    <script src="script.js"></script>
+   <script src="reset.js"></script>
+</body>
+
+</html>
